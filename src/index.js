@@ -3,7 +3,7 @@ import "./styles.css";
 
 class Elevator {
   constructor() {
-    this.currentPos = 4;
+    this.currentPos = 0;
   }
 
   goUp() {
@@ -44,10 +44,19 @@ class Floor {
   }
 }
 
-const floor1 = new Floor(1);
-const floor2 = new Floor(2);
-const floor3 = new Floor(3);
-const floor4 = new Floor(4);
+class Building {
+  constructor(height) {
+    this.height = height;
+    this.floors = [];
 
-const lift1 = new Elevator();
-floor1.callElevator(lift1);
+    for (let i = 0; i < this.height; i++) {
+      this.floors.push(new Floor(i));
+    }
+  }
+}
+
+const myBuild = new Building(5);
+const el1 = new Elevator();
+console.log(myBuild.floors[2]);
+
+myBuild.floors[4].callElevator(el1);

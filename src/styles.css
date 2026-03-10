@@ -1,0 +1,39 @@
+@font-face {
+    font-family: zen;
+    src: url(./asset/fonts/ZenDots-Regular.ttf) format('truetype');
+}
+
+*{
+    box-sizing: border-box;
+    outline: 1px solid red;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    padding: 2px;
+}
+.building{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.building>.floor{
+    flex: 1;
+    min-height: 120px;
+    display: flex;
+}
+.column{
+    flex: 1;
+}
+.shaft{
+    max-width: 160px;
+}
+.marking{
+    padding: 10px;
+    font-family: zen;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+}
