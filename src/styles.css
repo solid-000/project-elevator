@@ -37,3 +37,16 @@ body{
     font-size: 30px;
     font-weight: 700;
 }
+.action{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.call-button{
+    background-color: yellow;
+    height: 60px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+}   
